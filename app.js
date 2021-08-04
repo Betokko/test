@@ -80,3 +80,10 @@ let personalMovieDB = {
   },
 };
 
+
+let del = (e) => {e.target.remove(), console.log(1);};
+let btn = document.querySelectorAll('button')
+
+btn.forEach(item => {
+  item.addEventListener('click', del)
+})
